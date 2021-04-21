@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  
+  <title style=>Data Mahasiswa DEPILKOM</title>
+</head>
+<style type="text/css">
+  body { 
+    background: rgb(202, 202, 202);  
+  }
+</style>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary justify-content-center">
+    <a class="navbar-brand" href="#">Data Mahasiswa DEPILKOM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <br />
+  <br />
+
+  <div style="margin-left: 10%">
+    <form action="index.php" method="POST">
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <label for="nim">NIM</label>
+          <input type="text" class="form-control" name="nim" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <label for="nama">Nama</label>
+          <input type="text" class="form-control" name="nama" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="jk">Jenis Kelamin</label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="jk" id="jk1" value="Laki-Laki" />
+              <label class="form-check-label" for="jk1">Laki-Laki</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="jk" id="jk2" value="Perempuan" />
+              <label class="form-check-label" for="jk2">Perempuan</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-2">
+          <label for="ttl">Tanggal Lahir</label>
+          <input class="form-control" type="date" name="ttl" name="ttl" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="kelas">Kelas</label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="kelas" id="kelas1" value="Ilkom C1" />
+              <label class="form-check-label" for="kelas1">Ilkom C1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="kelas" id="kelas2" value="Ilkom C2" />
+              <label class="form-check-label" for="kelas2">Ilkom C2</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="kelas" id="kelas3" value="Pilkom A" />
+              <label class="form-check-label" for="kelas3">Pilkom A</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="kelas" id="kelas4" value="Pilkom B" />
+              <label class="form-check-label" for="kelas4">Pilkom B</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" name="add" class="btn btn-primary">Add</button>
+    </form>
+    
+    <br>
+    
+    <!-- Tabel 1 - Data Mahasiswa -->
+    <div style="display: inline-block; ">
+      <h3 style="text-align: center;" >DATA MAHASISWA</h3>
+      <!-- TABEL1 -->
+      <table class="table table-light"  align="left" border="2" style="text-align: center;">
+        <tr>
+          <td>No</td>
+          <td>NIM</td>
+          <td>Nama</td>
+          <td>Jenis Kelamin</td>
+          <td>Tempat/Tanggal Lahir</td>
+          <td>Kelas</td>
+          <td>Status</td>
+          <td>Aksi</td>
+        </tr>
+        <tr>
+          <!-- DATA YG AKAN DIGANTI -->
+          DATA_TABEL
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
